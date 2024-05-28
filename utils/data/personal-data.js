@@ -7,7 +7,7 @@ export const personalData = {
   email: "mdsumoncse19@gmail.com",
   phone: "+8801533785541",
   address: "Andorkilla, Chattogram, Bangladesh",
-  github: "https://github.com/sumoncse19/",
+  github: "https://github.com/md-sumon-cse19/",
   githubUser: "sumoncse19",
   devUsername: "sumoncse19",
   facebook: "https://www.facebook.com/sumoncse19/",
