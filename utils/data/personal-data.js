@@ -29,6 +29,6 @@ export const personalData = {
     "AWS",
   ],
   resume:
-    "https://drive.google.com/file/d/1WJT-03deh92_DpltqmpJ8Iossrv2uizO/view?usp=sharing",
+    "https://drive.google.com/file/d/19utd4WIZD5b_pmHnYvVgnVO78XxwsB7_/view?usp=sharing",
   timezone: "+6",
 };
