@@ -11,7 +11,7 @@ export const personalData = {
   githubUser: "sumoncse19",
   devUsername: "sumoncse19",
   facebook: "https://www.facebook.com/sumoncse19/",
-  linkedIn: "https://www.linkedin.com/in/md-sumon-cse19/",
+  linkedIn: "https://www.linkedin.com/in/sumoncse19/",
   twitter: "https://twitter.com/sumoncse19/",
   stackOverflow: "https://stackoverflow.com/users/14271794/md-sumon",
   leetcode: "https://leetcode.com/sumoncse19/",
@@ -29,6 +29,6 @@ export const personalData = {
     "AWS",
   ],
   resume:
-    "https://drive.google.com/file/d/19utd4WIZD5b_pmHnYvVgnVO78XxwsB7_/view?usp=sharing",
+    "https://drive.google.com/file/d/1fktZbdFC1GgUcY19kuZ8PU9g_lphKrL5/view?usp=sharing",
   timezone: "+6",
 };
