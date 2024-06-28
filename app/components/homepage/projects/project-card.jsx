@@ -21,9 +21,11 @@ function ProjectCard({ project }) {
           {project.name}
         </div>
 
-        <Link href={project.demo} target="_blank" className="cursor-pointer">
-          Live Demo
-        </Link>
+        {project.demo && (
+          <Link href={project.demo} target="_blank" className="cursor-pointer">
+            Live Demo
+          </Link>
+        )}
       </div>
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
         <code className="font-mono text-xs md:text-sm lg:text-base">
@@ -53,16 +55,84 @@ function ProjectCard({ project }) {
             ))}
             <span className="text-gray-400">{"],"}</span>
           </div>
+
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
             <span className="text-orange-400">{project.role}</span>
             <span className="text-gray-400">,</span>
           </div>
+
           <div className="ml-4 lg:ml-8 mr-2">
             <span className="text-white">Description:</span>
             <span className="text-cyan-400">{" " + project.description}</span>
             <span className="text-gray-400">,</span>
           </div>
+
+          {project.email && project.pass && (
+            <>
+              <div className="ml-4 lg:ml-8 mr-2">
+                <span className=" text-white">Credential:</span>
+                <span className="text-gray-400">{" {"}</span>
+              </div>
+              <div>
+                <span className="ml-8 lg:ml-12 mr-2 text-white">email:</span>
+                <span className="text-gray-400">{`'`}</span>
+                <span className="text-amber-300">{project.email}</span>
+                <span className="text-gray-400">{`',`}</span>
+              </div>
+              <div>
+                <span className="ml-8 lg:ml-12 mr-2 text-white">pass:</span>
+                <span className="text-gray-400">{`'`}</span>
+                <span className="text-amber-300">{project.pass}</span>
+                <span className="text-gray-400">{`',`}</span>
+              </div>
+              <div>
+                <span className="text-gray-400 ml-8">{`};`}</span>
+              </div>
+            </>
+          )}
+
+          {project.haveGitHub && (
+            <>
+              <div className="ml-4 lg:ml-8 mr-2">
+                <span className=" text-white">GitHub:</span>
+                <span className="text-gray-400">{" {"}</span>
+              </div>
+              {project.gitHubClient && (
+                <div>
+                  <span className="ml-8 lg:ml-12 mr-2 text-white">
+                    Frontend:
+                  </span>
+                  <span className="text-green-500">
+                    <Link
+                      href={project.gitHubClient}
+                      target="_blank"
+                      className="cursor-pointer"
+                    >
+                      Click Here
+                    </Link>
+                  </span>
+                </div>
+              )}
+              <div>
+                <span className="ml-8 lg:ml-12 mr-2 text-white">Backend:</span>
+                <span className="text-green-500">
+                  <Link
+                    href={project.gitHubBackend}
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    Click Here
+                  </Link>
+                </span>
+              </div>
+
+              <div>
+                <span className="text-gray-400 ml-8">{`};`}</span>
+              </div>
+            </>
+          )}
+
           <div>
             <span className="text-gray-400">{`};`}</span>
           </div>

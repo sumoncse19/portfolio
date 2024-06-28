@@ -19,8 +19,11 @@ export const projectsData = [
     ],
     role: "Frontend Developer",
     code: "",
-    demo: "https://parkolay.netlify.app/",
+    demo: "https://dev--parkolay-main.netlify.app/auth/login",
     image: crefin,
+    email: "sumon@devxhub.com",
+    pass: "123456",
+    haveGitHub: false,
   },
   {
     id: 2,
@@ -32,6 +35,9 @@ export const projectsData = [
     code: "",
     demo: "https://dev.sharparchive.com/",
     image: travel,
+    email: "accoutt04@gmail.com",
+    pass: "SharpArchive@2022",
+    haveGitHub: false,
   },
   {
     id: 3,
@@ -41,8 +47,11 @@ export const projectsData = [
     tools: ["Vue 3", "Tailwind CSS", "SCSS", "Aamar Pay", "TypeScript"],
     code: "",
     role: "Frontend Developer",
-    demo: "https://skmobileschool.com/",
+    demo: "https://dev.skmobileschool.com/",
     image: realEstate,
+    email: "tair4458@gmail.com",
+    pass: "tair4458@gmail.com",
+    haveGitHub: false,
   },
   {
     id: 4,
@@ -54,6 +63,36 @@ export const projectsData = [
     demo: "https://students-progress-tracker.netlify.app/",
     image: ayla,
     role: "Full Stack Developer(Alone)",
+    email: "pciujournal@gmail.com",
+    pass: "pciu123456",
+    haveGitHub: true,
+    gitHubClient:
+      "https://github.com/sumoncse19/student_progress_tracker_frontend",
+    gitHubBackend:
+      "https://github.com/sumoncse19/student_progress_tracker_server",
+  },
+  {
+    id: 5,
+    name: "Backend Starter",
+    description:
+      "Implement a backend starter using node.js (Express JS), MongoDB, Mongoose, Typescript modular pattern system ",
+    tools: [
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "Mongoose",
+      "Typescript",
+      "Husky",
+      "Eslint",
+      "Prettier",
+    ],
+    code: "",
+    demo: "",
+    image: ayla,
+    role: "Backend Developer(Alone)",
+    haveGitHub: true,
+    gitHubClient: "",
+    gitHubBackend: "https://github.com/sumoncse19/mongoose-starter",
   },
 ];
 
