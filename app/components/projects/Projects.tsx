@@ -4,6 +4,11 @@ import SectionWrapper from "../SectionWrapper";
 import ProjectCard from "./ProjectCard";
 import Link from "next/link";
 import oeHealth from "@/public/projects/oeHealth.webp";
+import skMobileSchool from "@/public/projects/sk-mobile-school.png";
+import ecopass from "@/public/projects/ecopass.png";
+import parkolay from "@/public/projects/parkolay.png";
+import childCareSystem from "@/public/projects/child-care-system.png";
+import bondhuGroup from "@/public/projects/bondhu-group.png";
 import fareNowPro from "@/public/projects/farenow-pro.webp";
 import storefront from "@/public/projects/Vue-Storefront.webp";
 import sharpArchive from "@/public/projects/sharp-archive.webp";
@@ -12,49 +17,60 @@ import fareNow from "@/public/projects/farenow.webp";
 const Projects = () => {
   const projectsData = [
     {
-      name: "Oral e-Health Monitoring Platform",
-      image: oeHealth,
-      category: "Web",
-      techStack: "Nuxt JS, Django, Vuetify, GraphQl",
-      links: {
-        visit: "https://teethwallet.com",
-      },
-    },
-    {
-      name: "FarenowPro Pro",
-      image: fareNowPro,
-      category: "Web",
-      techStack:
-        "Next JS, PHP, Ant Design, FullCalendar, OAuth, Tailwind CSS, Rest API",
-      links: {
-        visit: "https://pro.farenowPro.com",
-      },
-    },
-    {
-      name: "Vue StoreFont",
-      image: storefront,
-      category: "Web",
-      techStack: "Vue JS, Tailwind CSS, Storefont UI, Oddo, Graphql",
-      links: {
-        visit: "https://vsf-dev.labs.odoogap.com",
-      },
-    },
-    {
       name: "Sharp Archive",
       image: sharpArchive,
       category: "Web",
       techStack: "Nuxt JS, Tailwind CSS, Animation, Rest API",
       links: {
-        visit: "https://sharparchive.com",
+        visit: "https://dev.sharparchive.com/",
       },
     },
     {
-      name: "Farenow",
-      image: fareNow,
+      name: "SK Mobile School",
+      image: skMobileSchool,
+      category: "Web",
+      techStack: "Nuxt JS, Tailwind CSS, Rest API",
+      links: {
+        visit: "https://skmobileschool.com/",
+      },
+    },
+    {
+      name: "Ecopass",
+      image: ecopass,
       category: "Web",
       techStack: "Next JS, Tailwind CSS, Rest API",
       links: {
-        visit: "https://farenow.com/",
+        visit: "https://dev--parkolay-main.netlify.app/auth/login/",
+      },
+    },
+    {
+      name: "Bondhu Group MLM System",
+      image: bondhuGroup,
+      category: "Web",
+      techStack: "Next JS, Tailwind CSS, Rest API, Express JS, Mongoose",
+      links: {
+        visit: "https://bondhu-group-dev.vercel.app/",
+        GitHub_client: "https://github.com/sumoncse19/bondhu-group-client/",
+        GitHub_backend: "https://github.com/sumoncse19/bondhu-group-server/",
+      },
+    },
+    {
+      name: "Parkolay - A Parking Solution",
+      image: parkolay,
+      category: "Web",
+      techStack: "Nuxt JS, Tailwind CSS, Rest API",
+      links: {
+        visit: "https://dev--parkolay-main.netlify.app/auth/login/",
+      },
+    },
+    {
+      name: "Pulikids - Child Care Management",
+      image: childCareSystem,
+      category: "Web",
+      techStack:
+        "Node.js, Typescript, PostgreSQL, MongoDB, TypeORM, Mongoose, Zod, Clerk, Module Pattern",
+      links: {
+        visit: "https://github.com/sumoncse19/childcare-management/",
       },
     },
   ];

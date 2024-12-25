@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { BiLinkExternal } from "react-icons/bi";
+import { BiGitBranch, BiLinkExternal } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -43,6 +43,30 @@ const Project = ({ name, image, techStack, links }: any) => {
                 className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all"
               >
                 <BiLinkExternal size={20} />
+              </Link>
+            )}
+            {links.GitHub_client && links.GitHub_client.trim() && (
+              <Link
+                href={links.GitHub_client}
+                target="_blank"
+                className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all"
+              >
+                <p className="flex gap-2">
+                  <span>Frontend</span>
+                  <BiGitBranch size={20} />
+                </p>
+              </Link>
+            )}
+            {links.GitHub_backend && links.GitHub_backend.trim() && (
+              <Link
+                href={links.GitHub_backend}
+                target="_blank"
+                className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all"
+              >
+                <p className="flex gap-2">
+                  <span>Backend</span>
+                  <BiGitBranch size={20} />
+                </p>
               </Link>
             )}
           </div>
